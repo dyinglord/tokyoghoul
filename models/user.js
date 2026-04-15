@@ -18,6 +18,13 @@ const User = sequelize.define('User', {
    validate: { 
      isEmail: true 
    } 
+<<<<<<< HEAD
+=======
+ }, 
+ password: { 
+   type: DataTypes.STRING, 
+   allowNull: false 
+>>>>>>> 3272d1c (auth)
  } 
 }, { 
    tableName: 'users', 
@@ -27,4 +34,8 @@ const User = sequelize.define('User', {
    updatedAt: 'updated_at'   // Map to snake_case column 
 }); 
  
+<<<<<<< HEAD
 module.exports = User;
+=======
+module.exports = User; 
+>>>>>>> 3272d1c (auth)

@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+require('dotenv').config();
+const authRoutes = require('./routes/auth');
+const bcrypt = require('bcryptjs'); 
+const jwt = require('jsonwebtoken'); 
+const authMiddleware = require('./middleware/auth');
+>>>>>>> 3272d1c (auth)
 const express = require('express'); 
 const sequelize = require('./config/database'); 
 const User = require('./models/user'); 
@@ -7,6 +15,10 @@ const port = process.env.PORT || 3111;
  
 // Middleware 
 app.use(express.json()); 
+<<<<<<< HEAD
+=======
+app.use('/auth', authRoutes);
+>>>>>>> 3272d1c (auth)
  
 // Initialize database 
 async function initDatabase() { 
